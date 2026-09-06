@@ -1,0 +1,62 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files (can opt-in for committing if needed)
+.env*
+
+# OAuth client secret files
+client_secret_*.json
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+/src/generated/prisma
+
+# real brand campaign script library — confidential client material, not
+# source code; the import scripts in scripts/ read these from disk locally
+# but they must never be pushed to a public repo
+scripts/*.txt
+
+# generated report/output artifacts from one-off diagnostic scripts in
+# scripts/ — not source, regenerated on demand
+scripts/eval-report.json
+scripts/merged-scripts-report.json
+scripts/pilot-campaign-analysis-output.json
+scripts/truncation-report.json
+scratch_validation_scripts.json
+
+# Playwright test artifacts
+/test-results/
